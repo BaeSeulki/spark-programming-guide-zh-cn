@@ -17,8 +17,7 @@ GraphX是一个新的（alpha）Spark API，它用于图和并行图(graph-paral
 
 ![图分析路径](../img/graph_analytics_pipeline.png)
 
-GraphX项目的目的就是将`graph-parallel`和`data-parallel`统一到一个系统中，这个系统拥有一个唯一的组合API。GraphX允许用户将数据当做一个图和一个集合（RDD），而不需要
-而不需要数据移动或者复杂。通过将最新的进展整合进`graph-parallel`系统，GraphX能够优化图操作的执行。
+GraphX项目的目的就是将`graph-parallel`和`data-parallel`统一到一个系统中，这个系统拥有一个唯一的组合API。GraphX允许用户将数据当做一个图和一个集合（RDD），而不需要数据移动或者复制。通过将最新的进展整合进`graph-parallel`系统，GraphX能够优化图操作的执行。
 
 * [开始](getting-started.md)
 * [属性图](property-graph.md)
