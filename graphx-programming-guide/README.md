@@ -1,15 +1,15 @@
 # GraphX编程指南
 
-&emsp;&emsp;`GraphX`是一个新的`Spark API`，它用于图和分布式图(`graph-parallel`)的计算。`GraphX`通过引入[Resilient Distributed Property Graph](property-graph.md)：带有
+&emsp;&emsp;`GraphX`是一个新的`Spark API`，它用于图和分布式图(`graph-parallel`)的计算。`GraphX`通过引入[Resilient Distributed Property Graph](property-graph.md)：
 顶点和边均有属性的有向多重图，来扩展`Spark RDD`。为了支持图计算，`GraphX`公开一组基本的功能操作以及一个优化过的`Pregel API`。另外，`GraphX`包含了一个日益增长的图算法和图`builders`的
 集合，用以简化图分析任务。
 
-&emsp;&emsp;从社交网络到语言建模，不断增长的规模和图形数据的重要性已经推动了许多新的`graph-parallel`系统（如[Giraph](http://giraph.apache.org/)和[GraphLab](http://graphlab.org/)）的发展。
-通过限制可表达的计算类型和引入新的技术来划分和分配图，这些系统可以高效地执行复杂的图形算法，比一般的`data-parallel`系统快很多。
+&emsp;&emsp;从社交网络到语言建模，不断增长的规模以及图形数据的重要性已经推动了许多新的分布式图系统（如[Giraph](http://giraph.apache.org/)和[GraphLab](http://graphlab.org/)）的发展。
+通过限制可表达的计算类型和引入新的技术来划分和分配图，这些系统可以高效地执行复杂的图形算法，比一般的分布式数据系统（`data-parallel`，如`spark`、`mapreduce`）快很多。
 
 ![data parallel vs graph parallel](../img/data_parallel_vs_graph_parallel.png)
 
-&emsp;&emsp;然而，通过这种限制可以提高性能，但是很难表示典型的图分析途径（构造图、修改它的结构或者表示跨多个图的计算）中很多重要的`stages`。另外，我们如何看待数据取决于我们的目标，并且同一原始数据可能有许多不同表和图的视图。
+&emsp;&emsp;然而，通过限制可表达的计算类型可以提高性能，但是很难表示典型的图分析途径（构造图、修改它的结构或者表示跨多个图的计算）中很多重要的`stages`。另外，我们如何看待数据取决于我们的目标，并且同一原始数据可能有许多不同表和图的视图。
 
 ![表和图](../img/tables_and_graphs.png)
 
