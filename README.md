@@ -65,6 +65,11 @@ Spark 编程指南简体中文版
 * [更多文档](more/spark-configuration.md)
   * [Spark配置](more/spark-configuration.md)
 
+## 说明
+
+
+本文档翻译的版本是spark 1.2
+
 ## Copyright
 
 本文翻译自[Spark 官方文档](https://spark.apache.org/docs/latest/)
