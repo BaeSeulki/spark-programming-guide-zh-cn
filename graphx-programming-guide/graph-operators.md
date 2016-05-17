@@ -134,7 +134,7 @@ class Graph[VD, ED] {
 在不移动或者复制数据的情况下有效地实现它。
 
 &emsp;&emsp;[subgraph](http://spark.apache.org/docs/latest/api/scala/index.html#org.apache.spark.graphx.Graph@subgraph((EdgeTriplet[VD,ED])⇒Boolean,(VertexId,VD)⇒Boolean):Graph[VD,ED])操作
-利用顶点和边的谓词（predicates），返回的图仅仅包含满足顶点谓词的顶点、满足边谓词的边以及满足顶点谓词的连接顶点（connect vertices）。`subgraph`操作可以用于很多场景，如获取
+利用顶点和边的判断式（predicates），返回的图仅仅包含满足顶点判断式的顶点、满足边判断式的边以及满足顶点判断式的连接顶点（connect vertices）。`subgraph`操作可以用于很多场景，如获取
 感兴趣的顶点和边组成的图或者获取清除断开链接后的图。下面的例子删除了断开的链接。
 
 ```scala
