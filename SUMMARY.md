@@ -63,3 +63,4 @@
   * [在yarn上运行Spark](deploying/running-spark-on-yarn.md)
 * [更多文档](more/spark-configuration.md)
   * [Spark配置](more/spark-configuration.md)
+  * [性能调优](more/spark-tuning.md)
